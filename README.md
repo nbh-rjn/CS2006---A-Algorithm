@@ -48,26 +48,28 @@ pthread_create(&T[6], NULL, seventhSuccessor, NULL);
 pthread_create(&T[7], NULL, eighthSuccessor, NULL);
 
 for (int i = 0; i < 8; i++) pthread_join(T[i], NULL);
+```
 
 
-Results
-Applying multithreading concepts to the A-Star Search algorithm yields quicker results and more efficient utilization of resources, as multiple directions are explored simultaneously. 
-In addition to multithreading, the code has been amended for clarity and clear output of the grid, intended source and destination cells, and path followed.
+## Results:
+The A* algorithm, enhanced with multithreading, demonstrates:
+- Faster execution: Multiple directions are processed simultaneously.
+- Clear grid representation: Source, destination, and shortest path are displayed effectively.
 
-Output
+## Output:
+
 Windows:
-![image](https://github.com/user-attachments/assets/5695e992-1476-4436-a970-5ceca3e84249)
-![image](https://github.com/user-attachments/assets/0c2f05f7-f5a7-487a-aee8-150c45de7461)
+https://github.com/user-attachments/assets/5695e992-1476-4436-a970-5ceca3e84249
+https://github.com/user-attachments/assets/0c2f05f7-f5a7-487a-aee8-150c45de7461
 
-Linux(Ubuntu):
-![image](https://github.com/user-attachments/assets/c2f2b37a-644d-4c7b-a1f4-ef2eec8c1bbf)
-![image](https://github.com/user-attachments/assets/509cfabf-1acd-4502-98a3-cf61244f340c)
+Linux (Ubuntu):
+https://github.com/user-attachments/assets/c2f2b37a-644d-4c7b-a1f4-ef2eec8c1bbf
+https://github.com/user-attachments/assets/509cfabf-1acd-4502-98a3-cf61244f340c
 
- 
-Conclusion
+## Conclusion
 The shortest path from each source vertex to the destination vertex has been successfully obtained by utilizing heuristic values across threads.
 
-Tools, Technology and Resources
+## Tools, Technology and Resources
 Learning and references:
 https://youtu.be/eSOJ3ARN5FM 
 https://www.geeksforgeeks.org/a-search-algorithm/ (non-multithreading)
